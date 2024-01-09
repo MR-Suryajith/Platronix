@@ -34,7 +34,7 @@ body {
   color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("proj img.jpg");
+  background-image: url("../proj\ img.jpg");
   overflow: hidden;
 }
 .box-form .left .overlay {
@@ -100,8 +100,9 @@ body {
 }
 .box-form .right .remember-me--forget-password {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
+  font-size: small;
 }
 .box-form .right .remember-me--forget-password input {
   margin: 0;
@@ -161,4 +162,12 @@ label span.text-checkbox {
 
 label input[type="checkbox"] {
   display: none;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
 }
