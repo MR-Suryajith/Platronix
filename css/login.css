@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(135deg, #FAB2FF 10%, #1904E5 100%);
+  background-image: linear-gradient(135deg, #ffffff 10%, #ffffffbb 100%);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -41,7 +41,7 @@ body {
   padding: 30px;
   width: 100%;
   height: 100%;
-  background: #5961f9ad;
+  background: #cc6326ad;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -118,8 +118,8 @@ body {
   display: inline-block;
   border: 0;
   outline: 0;
-  box-shadow: 0px 4px 20px 0px #49c628a6;
-  background-image: linear-gradient(135deg, #70F570 10%, #49C628 100%);
+  box-shadow: 0px 4px 20px 0px #cc6326ad;
+  background-image: linear-gradient(135deg, #cc6326ad 10%, #cc6326ad 100%);
 }
 
 label {
