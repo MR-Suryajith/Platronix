@@ -34,12 +34,17 @@
           Don't have an account? <a href="#">Creat Your Account</a> it takes
           less than a minute
         </p>
-        <div class="inputs">
-          <input type="text" placeholder="user name" />
-          <br />
-          <input type="password" placeholder="password" />
-        </div>
-
+        <form action="" id="Platronix">
+          <div class="inputs">
+            <input type="text" id="username" placeholder="username" />
+            <br />
+            <input type="password" id="password" placeholder="password" />
+          </div>
+          <div class="inputs">
+            <button type="submit">Login</button>
+          </div>
+          
+        </form>
         <br /><br />
 
         <div class="remember-me--forget-password">
@@ -49,9 +54,14 @@
         </div>
 
         <br />
-        <a href="/index.html"><button>Login</button></a>
+        
       </div>
     </div>
+
     <!-- partial -->
+
+    <script src="https://console.firebase.google.com/project/platronix/database/platronix-default-rtdb/data/~2F"></script>
+
+    <script src="js/log.js"></script>
   </body>
 </html>
