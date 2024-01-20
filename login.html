@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" type="text/css" href="./css/login.css" />
   </head>
   <body>
     <!-- partial:index.partial.html -->
@@ -34,17 +34,29 @@
           Don't have an account? <a href="#">Creat Your Account</a> it takes
           less than a minute
         </p>
-        <form action="" id="Platronix">
-          <div class="inputs">
-            <input type="text" id="username" placeholder="username" />
-            <br />
-            <input type="password" id="password" placeholder="password" />
-          </div>
-          <div class="inputs">
-            <button type="submit">Login</button>
-          </div>
-          
-        </form>
+        <form action="">
+        <div id="contentt_container">
+           <div id="form_container">
+             <div id="form_header_container">
+                <h2 id="form_header"></h2>
+             </div>
+             <div id="form_content_container">
+              <div id="form_content_inner_container">
+                <input type="email" id="email" placeholder="Email" />
+                <input type="password" id="password" placeholder="New password" />
+
+                <div id="button_container">
+                <div class="input">
+                    <button onclick="login()">Login</button>
+                    <button onclick="SignUp()">SignUp</button>
+
+                </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </form>
         <br /><br />
 
         <div class="remember-me--forget-password">
@@ -60,8 +72,13 @@
 
     <!-- partial -->
 
-    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
 
-    <script src="js/log.js"></script>
+
   </body>
+  <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-database.js"></script>
+  <script src="js/log.js"></script>
+
 </html>
+  
