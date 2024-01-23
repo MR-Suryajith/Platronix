@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
     <meta charset="UTF-8" />
     <title>Login Page</title>
     <link
@@ -30,55 +32,30 @@
 
       <div class="right">
         <h5>Login</h5>
-        <p>
-          Don't have an account? <a href="#">Creat Your Account</a> it takes
-          less than a minute
-        </p>
-        <form action="">
-        <div id="contentt_container">
-           <div id="form_container">
-             <div id="form_header_container">
-                <h2 id="form_header"></h2>
-             </div>
-             <div id="form_content_container">
-              <div id="form_content_inner_container">
-                <input type="email" id="email" placeholder="Email" />
-                <input type="password" id="password" placeholder="New password" />
+        <p>Don't have an account? CLick on <strong>Sign Up</strong></p>
+        <div class="container">
+          <h2>Enter the email and password below.</h2>
+          <input type="email" placeholder="Email" id="email" />
+          <br />
+          <br />
+          <input type="password" placeholder="Password" id="password" />
+          <br />
+          <br />
+          <button onclick="login()" id="logIp">Login </button>
 
-                <div id="button_container">
-                <div class="input">
-                    <button onclick="login()">Login</button>
-                    <button onclick="SignUp()">SignUp</button>
+          <br />
+          <br />
+          <br />
+          <button onclick="addUsers()" id="signUp">Signup</button>
 
-                </div>
-                </div>
-              </div>
-            </div>
-            </div>
+          <br />
+          <br />
+          <div id="output"></div>
         </div>
-      </form>
         <br /><br />
-
-        <div class="remember-me--forget-password">
-          <!-- Angular -->
-
-          <a href="">forget password?</a>
-        </div>
-
         <br />
-        
       </div>
     </div>
-
-    <!-- partial -->
-
-
-
   </body>
-  <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-database.js"></script>
   <script src="js/log.js"></script>
-
 </html>
-  

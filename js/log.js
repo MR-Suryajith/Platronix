@@ -1,40 +1,60 @@
-<script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+ src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"
+ src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"
+ let output = document.getElementById("output");
+      // Your web app's Firebase configuration
+      var initialConfig = {
+        apiKey: "AIzaSyBAEXfaeOWZntDKg2QaczerIk6l5cxl-NI", // change API keu
+        authDomain: "platronix-9f52e.firebaseapp.com", // change domain
+        projectId: "platronix-9f52e", // change project Id
+      };
 
-        
-        let firebaseConfig = {
-          apiKey: "AIzaSyAMstWHVnqvGOJIpAtfk-nAMzKn1hb_PlM",
-          authDomain: "platronix.firebaseapp.com",
-          databaseURL: "https://platronix-default-rtdb.firebaseio.com",
-          projectId: "platronix",
-          storageBucket: "platronix.appspot.com",
-          messagingSenderId: "1035820636155",
-          appId: "1:1035820636155:web:15ea0b42c681e3e3f41d5e"
-        };
-      
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        let PlatronixDB = firebase.database().ref('Platronix');
-        document.getElementById('Platronix').addEventListener('submit',submitform);
-      
-        function submitform(e){
-          e.preventDefault();
-          let username = getElementVal('username');
-          let password =getElementVal('password');
-          saveMessasge(username,password);
-          document.getElementById('Platronix').reset();
-      
+      // Initialize Firebase
+      firebase.initializeApp(initialConfig);
+      const authenticate = firebase.auth();
+      const database = firebase.database();
+      // Check if there are any active users
+      firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+          var email = user.email;
+          output.innerHTML = "Active user is " + email + "<br>";
+        } else {
+          output.innerHTML = "No active users" + "<br>";
         }
-        function getInputVal(id){
-          return document.getElementById(id).value;
-        }
-      
-        function saveMessasge(username,password) {
-          let newPlatronix = PlatronixDB.push();
-          newPlatronix.set({
-            username: username,
-            password: password,
+      });
+
+      // add users
+      function addUsers() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        // adding users via the promise
+        authenticate
+          .createUserWithEmailAndPassword(email, password)
+          .then((userCredential) => {
+            output.innerHTML =
+              "User added successfully"
+              "<br>";
+          })
+          .catch((e) => {
+            output.innerHTML = "Some error occurred - " + e.message + "<br>";
           });
-        }
-      
-        
-  
+      }
+
+      // login function
+      function login() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        authenticate
+          .signInWithEmailAndPassword(email, password)
+          .then((userCredential) => {
+            output.innerHTML =
+              "User login successfully" +
+              "<br>";
+              window.location.href = "index.html";
+          })
+          .catch((e) => {
+            output.innerHTML = "Some error occurred - " + e.message + "<br>";
+          });
+      }
+
+      // logout currently logged-in user
