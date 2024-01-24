@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
     <meta charset="UTF-8" />
     <title>Login Page</title>
     <link
@@ -15,7 +17,7 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" type="text/css" href="./css/login.css" />
   </head>
   <body>
     <!-- partial:index.partial.html -->
@@ -30,28 +32,31 @@
 
       <div class="right">
         <h5>Login</h5>
-        <p>
-          Don't have an account? <a href="#">Creat Your Account</a> it takes
-          less than a minute
-        </p>
-        <div class="inputs">
-          <input type="text" placeholder="user name" />
+        <p>Don't have an account? CLick on <strong>Sign Up</strong></p>
+        <div class="container">
+          <input type="email" placeholder="Email" id="email" />
           <br />
-          <input type="password" placeholder="password" />
-        </div>
+          <br />
+          <input type="password" placeholder="Password" id="password" />
+          <br />
+          <br />
+          <button onclick="login()" id="logIp">Login</button>
 
+          <br />
+          <br />
+          <br />
+          <a href="sign up\signup.html">
+
+          <button onclick="addUsers()" id="signUp">Sign up</button>
+          </a>
+          <br />
+          <br />
+          <div id="output"></div>
+        </div>
         <br /><br />
-
-        <div class="remember-me--forget-password">
-          <!-- Angular -->
-
-          <a href="">forget password?</a>
-        </div>
-
         <br />
-        <a href="/index.html"><button>Login</button></a>
       </div>
     </div>
-    <!-- partial -->
   </body>
+  <script src="js/log.js"></script>
 </html>
