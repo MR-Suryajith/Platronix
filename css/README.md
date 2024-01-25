@@ -1,3 +1,0 @@
-# Platronix
-
-E-commerce Website
