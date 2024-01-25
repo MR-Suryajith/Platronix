@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
 		<meta charset="utf-8">
 		<title>PLATRONIX-Sign up</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,16 +23,9 @@
 				</div>
 				<form action="">
 					<h3>Sign up</h3>
-					<div class="form-group">
-						<input type="text" placeholder="First Name" class="form-control">
-						<input type="text" placeholder="Last Name" class="form-control">
-					</div>
+
 					<div class="form-wrapper">
-						<input type="text" placeholder="Username" class="form-control">
-						<i class="zmdi zmdi-account"></i>
-					</div>
-					<div class="form-wrapper">
-						<input type="text" placeholder="Email Address" class="form-control">
+						<input type="text" placeholder="Email" class="form-control">
 						<i class="zmdi zmdi-email"></i>
 					</div>
 					
@@ -38,10 +33,7 @@
 						<input type="password" placeholder="Password" class="form-control">
 						<i class="zmdi zmdi-lock"></i>
 					</div>
-					<div class="form-wrapper">
-						<input type="password" placeholder="Confirm Password" class="form-control">
-						<i class="zmdi zmdi-lock"></i>
-					</div>
+
 					<button onclick="addUsers()" id="signUp">Sign up</button>
 
 				</form>
@@ -49,5 +41,5 @@
 		</div>
 		
 	</body>
-	<script src="js\signup.js"></script>
+	<script src="js/sign.js"></script>
 </html>
