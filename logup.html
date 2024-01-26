@@ -4,37 +4,35 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
     <meta charset="UTF-8" />
-    <title>signup Page</title>
+    <title>Login Page</title>
     <link
-     
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
-       href="sign up/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"
     />
 
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
 
-
-    <link rel="stylesheet" href="./sign up/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/login.css" />
   </head>
 
   <body>
-    <div
-    class="wrapper"
-    style="background-image: url('sign up/images/bg-registration-form-1.jpg')"
-   >
-    <div class="inner">
-      <div class="image-holder">
-        <img src="sign up/images/registration-form-1.jpg" alt =""/>
-        </div>
-        <form action="">
+    <!-- partial:index.partial.html -->
+    <div class="box-form">
+      <div class="left">
         <div class="overlay">
-          <h3>Sign up</h3>
-        
-          
+          <h1>PLATRONIX</h1>
+          <p>Where Every Construction Materials Can Be Found!</p>
+          <span> </span>
         </div>
       </div>
 
-      <div class="form-wrapper">
-        <h5>Sign up</h5>
+      <div class="right">
+        <h5>Login</h5>
         <p>Don't have an account? CLick on <strong>Sign Up</strong></p>
         <div class="form-wrapper">
           <input
@@ -49,7 +47,12 @@
           <input type="password" placeholder="Password" id="password" />
           <br />
           <br />
-          <button onclick="addUsers()" id="logIp">Sign up</button>
+
+          <br />
+          <br />
+          <br />
+
+          <button id="signUp">Sign up</button>
 
           <br />
           <br />
@@ -60,5 +63,5 @@
       </div>
     </div>
   </body>
-  <script src="sign up\sign.js"></script>
+  <script src="js/log.js"></script>
 </html>
