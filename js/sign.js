@@ -23,6 +23,9 @@ firebase.auth().onAuthStateChanged((user) => {
 });
 
 // add users
+function waitTimer() {
+  window.location.href = "../login.html";
+}
 function addUsers() {
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
@@ -33,6 +36,7 @@ function addUsers() {
     .then((userCredential) => {
       output.innerHTML = "User added successfully";
       ("<br>");
+      setTimeout(waitTimer, 2000);
     })
     .catch((e) => {
       output.innerHTML = "Some error occurred - " + e.message + "<br>";
