@@ -1,6 +1,6 @@
-# BuildMart: A Construction Material E-Commerce Site
+# PLATRONIX: A Construction Material E-Commerce Site
 
-BuildMart is an online platform that connects construction professionals with reliable suppliers of building materials. Whether you need cement, bricks, steel, or wood, you can find the best deals and quality products on BuildMart. You can also browse through various categories, compare prices, and place orders with ease.
+Platronix is an online platform that connects construction professionals with reliable suppliers of building materials. Whether you need cement, bricks, steel, or wood, you can find the best deals and quality products on Platronix. You can also browse through various categories, compare prices, and place orders with ease.
 
 ## Table of Contents
 - Features
@@ -17,7 +17,7 @@ BuildMart is an online platform that connects construction professionals with re
 - A feedback system that lets you rate and review the products and suppliers you have purchased from, and also see the ratings and reviews of other customers.
 
 ## Installation
-To install BuildMart on your local machine, you will need the following prerequisites:
+To install Platronix on your local machine, you will need the following prerequisites:
 - Python 3.8 or higher
 - Django 3.2 or higher
 - PostgreSQL 13 or higher
