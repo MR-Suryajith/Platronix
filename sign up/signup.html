@@ -18,38 +18,36 @@
   </head>
 
   <body>
-    
     <div
       class="wrapper"
-      style="background-image: url('images/bg-registration-form-1.jpg')"
+      style="background-image: url('images/background\ image.png')"
     >
-    <div class="inner">
+      <div class="inner">
         <div class="image-holder">
-          <img src="images/registration-form-1.jpg" alt="" />
+          <img src="images/foreground.png" alt="" />
         </div>
-        <br>
+        
+        <div class="form-wrapper">
           <h3>Sign up</h3>
-          
-      <br>
-          <div class="form-wrapper">
           <input
             type="text"
             placeholder="Email"
-            class="form-control" 
+            class="form-control"
             id="email"
           />
-          
-          <br />
-          <br />
-          <input type="password" placeholder="Password" class="form-control" id="password" />
-          
-          <button onclick= addUsers() id="signUp">Sign up</button>
 
-          <br />
-          <br />
+          <input
+            type="password"
+            placeholder="Password"
+            class="form-control"
+            id="password"
+          />
+
+          <button onclick="addUsers()" id="signUp">Sign up</button>
+
           <div id="output"></div>
         </div>
-      
+      </div>
     </div>
   </body>
   <script src="/js/sign.js"></script>

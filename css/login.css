@@ -72,6 +72,7 @@ body {
 .box-form .right {
   padding: 40px;
   overflow: hidden;
+  margin-right: 10%;
 }
 @media (max-width: 980px) {
   .box-form .right {
