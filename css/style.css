@@ -145,12 +145,6 @@ a:hover {
   font-family: "Poppins-Regular";
 }
 
-select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  cursor: pointer;
-  padding-left: 20px;
-}
 select option[value=""][disabled] {
   display: none;
 }
