@@ -27,4 +27,4 @@ You can follow these steps to install BuildMart:
 1. Clone this repository to your local machine using the command:
 
 ```bash
-git clone https://github.com/BuildMart/BuildMart.git
+https://github.com/MR-Suryajith/Platronix.git
