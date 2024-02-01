@@ -5,12 +5,14 @@ body {
   background-attachment: fixed;
   font-family: "Open Sans", sans-serif;
   color: #333333;
+  height: 100px;
 }
 
 .box-form {
+  height: fit-content;
   margin: 0 auto;
   width: 80%;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -25,16 +27,17 @@ body {
     text-align: center;
     align-content: center;
     align-items: center;
+    height: auto;
   }
 }
 .box-form div {
   height: auto;
 }
 .box-form .left {
-  color: #FFFFFF;
+  color: #ffffff;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../proj\ img.jpg");
+  background-image: url("/logimg.jpg");
   overflow: hidden;
 }
 .box-form .left .overlay {
@@ -58,7 +61,7 @@ body {
 }
 .box-form .left .overlay span a {
   background: #3b5998;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 10px;
   padding: 14px 50px;
   border-radius: 100px;
@@ -85,7 +88,7 @@ body {
 }
 .box-form .right p {
   font-size: 14px;
-  color: #B0B3B9;
+  color: #b0b3b9;
 }
 .box-form .right .inputs {
   overflow: hidden;
@@ -97,9 +100,8 @@ body {
   font-size: 16px;
   border: none;
   outline: none;
-  border-bottom: 2px solid #B0B3B9;
+  border-bottom: 2px solid #b0b3b9;
 }
-
 
 .box-form .right button {
   float: right;
@@ -122,11 +124,11 @@ label {
 }
 
 label::before {
-  content: ' \f00c';
+  content: " \f00c";
   position: absolute;
   font-family: FontAwesome;
   background: transparent;
-  border: 3px solid #70F570;
+  border: 3px solid #70f570;
   border-radius: 4px;
   color: transparent;
   left: -30px;
@@ -135,14 +137,14 @@ label::before {
 
 label:hover::before {
   font-family: FontAwesome;
-  content: ' \f00c';
+  content: " \f00c";
   color: #fff;
   cursor: pointer;
-  background: #70F570;
+  background: #70f570;
 }
 
 label:hover::before .text-checkbox {
-  background: #70F570;
+  background: #70f570;
 }
 
 label span.text-checkbox {
