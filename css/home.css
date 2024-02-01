@@ -1090,7 +1090,8 @@ button:focus:not(:focus-visible) {
   }
 
   .lead {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 300;
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
